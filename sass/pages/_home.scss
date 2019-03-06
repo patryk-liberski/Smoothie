@@ -1,0 +1,357 @@
+.section-introduction {
+  margin-top: -14rem;
+  padding: 20rem 0;
+  background-color: #f7f7f7;
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .section-introduction {
+    margin-top: -18rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-introduction {
+    padding: 20rem 0 10rem 0;
+  }
+}
+
+.section-experience {
+  padding: 10rem 0;
+  background-image: url(../img/smoothies.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba($color-white, 0.8);
+    padding: 15rem 8rem;
+  }
+}
+
+.section-experience__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-experience {
+    padding: 9rem 0;
+
+    &__wrapper {
+      width: 90%;
+      padding: 12rem 3rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-experience {
+    padding: 10rem 0;
+
+    &__wrapper {
+      width: 90%;
+      padding: 12rem 3rem;
+    }
+  }
+
+  .section-experience__container {
+    .image-box {
+      & > img {
+        width: 10rem;
+      }
+    }
+  }
+}
+
+.section-look {
+  padding: 10rem 0;
+  background-color: beige;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.weight {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  margin-bottom: 10rem;
+
+  &__desc {
+    padding: 15rem 4rem;
+    width: 50%;
+  }
+
+  &__image {
+    padding: 15rem 0;
+    width: 50%;
+    background-image: url(../img/muscle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 19% 100%);
+  }
+}
+
+.muscle {
+  display: flex;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+
+  &__desc {
+    padding: 15rem 4rem;
+    width: 50%;
+  }
+
+  &__image {
+    padding: 15rem 0;
+    width: 50%;
+    background-image: url(../img/weight.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0%, 81% 100%, 0 100%);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .weight {
+    &__desc {
+      padding: 5rem 3rem;
+    }
+  }
+
+  .muscle {
+    &__desc {
+      padding: 5rem 3rem;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .weight {
+    width: 90%;
+
+    &__desc {
+      padding: 5rem 3rem;
+    }
+  }
+
+  .muscle {
+    width: 90%;
+
+    &__desc {
+      padding: 5rem 3rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .weight {
+    width: 90%;
+    margin-bottom: 5rem;
+
+    &__desc {
+      width: 100%;
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(255, 255, 255, 0.7),
+          rgba(255, 255, 255, 0.7)
+        ),
+        url(../img/muscle.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+
+  .muscle {
+    width: 90%;
+
+    &__desc {
+      width: 100%;
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(255, 255, 255, 0.7),
+          rgba(255, 255, 255, 0.7)
+        ),
+        url(../img/weight.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/news.jpg);
+  background-size: cover;
+  width: 80%;
+  height: 50rem;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .book {
+    height: 60rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-book {
+    padding: 10rem 0;
+  }
+
+  .book {
+    width: 90%;
+    height: 60rem;
+
+    &__form {
+      width: 100%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.section-alert {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.section-alert__wrapper {
+  // background-image: linear-gradient(rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%);
+  // background-size: cover;
+  width: 80%;
+  height: 50rem;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  display: flex;
+}
+
+.section-alert__desc {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 2rem;
+
+  & > h3 {
+    font-size: 1.6rem;
+  }
+}
+
+.section-alert__image {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/heart.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1919px) {
+  .section-alert {
+    &__desc {
+      & > p {
+        font-size: 1.9rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1439px) and (max-width: 1919px) {
+  .section-alert {
+    &__desc {
+      & > p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .section-alert {
+    padding: 10rem 0;
+
+    &__wrapper {
+      width: 90%;
+      height: auto;
+    }
+
+    &__desc {
+      width: 100%;
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url(../img/heart.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 3rem;
+
+      & > h3 {
+        font-size: 2rem;
+      }
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .section-alert__desc > h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-alert__desc > h3 {
+    font-size: 3rem;
+  }
+}
